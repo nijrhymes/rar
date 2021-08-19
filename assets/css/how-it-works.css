@@ -1,0 +1,614 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+.topnav {
+  z-index: auto;
+}
+
+.nav1 {
+  display: block;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 1;
+  padding: 0px 0px;
+}
+
+label {
+  margin: 0 20px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: white;
+}
+
+#toggle {
+  display: none;
+}
+
+.menu {
+  margin: 0 30px 0 0;
+  float: none;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+.logo {
+  color: #00adef;
+}
+
+.menu-right {
+  float: right;
+}
+
+.menu a:hover {
+  color: rgb(56, 147, 233);
+}
+
+.menu a:active {
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 852px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin: 0px;
+  }
+  .menu-right {
+    float: none;
+  }
+  span {
+    display: block;
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0px;
+  }
+  #toggle:checked + .menu {
+    display: block;
+    background: rgb(54, 54, 70);
+  }
+}
+
+.hiw {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  background-image: url(../images/backgrounds/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
+  width: 100%;
+  height: 500px;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hiw {
+    width: 100%;
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .hiw {
+    width: 100%;
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 852px) {
+  .hiw {
+    width: 100%;
+    height: 330px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hiw {
+    width: 100%;
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  .hiw {
+    width: 100%;
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .hiw {
+    width: 100%;
+    height: 330px;
+  }
+}
+
+.hiw-text {
+  position: absolute;
+  color: #fff;
+  font-family: "Raleway" sans-serif;
+  font-size: 20px;
+  top: 360px;
+  left: 30px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 852px) {
+  .hiw-text {
+    font-size: 18px;
+    top: 8em;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .hiw-text {
+    font-size: 18px;
+    width: 85%;
+    left: 25px;
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  .hiw-text {
+    font-size: 16px;
+    left: 25px;
+    top: 6em;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .hiw-text {
+    font-size: 16px;
+    width: 90%;
+    top: 4em;
+    left: 25px;
+    font-weight: 500;
+  }
+}
+
+.value-prop-main {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  line-height: 20px;
+  width: 100%;
+}
+
+.value-prop-main h2 {
+  text-align: center;
+  color: #646262;
+  font-weight: 500;
+  font-size: 1.875rem;
+  margin: 0px auto 32px;
+  line-height: 1.22;
+}
+
+.value-prop-main p {
+  font-size: 1.125rem;
+  line-height: 1.22;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.value-prop-container {
+  width: 95%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .value-prop-container {
+    font-size: 18px;
+    bottom: 400px;
+    width: 80%;
+    left: 25px;
+  }
+}
+
+.value-prop-header span {
+  font-size: 34px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.value-prop-item {
+  width: 25%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.value-prop-item p {
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .value-prop-item {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .value-prop-item p {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.fastbooking-main {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  background: #fff;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.fastbooking-main h2 {
+  text-align: center;
+  color: #646262;
+  font-weight: 500;
+  font-size: 1.875rem;
+  margin: 0px auto 32px;
+  line-height: 1.22;
+}
+
+.fastbooking-main p {
+  font-size: 1.125rem;
+  line-height: 1.22;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.fastbooking-header span {
+  font-size: 34px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fastbooking-steps-actual {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  background: #fff;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  text-align: center;
+  color: #646262;
+}
+
+.fastbooking-steps-actual h4 {
+  font-weight: normal;
+  width: 50%;
+  text-align: center;
+  color: rgba(252, 173, 64, 1);
+  margin: 0px auto 50px;
+}
+
+.fastbooking-steps-actual p {
+  padding: 0px 20px;
+  width: 80%;
+  text-align: center;
+  margin: 0px auto 50px;
+  color: #646262;
+}
+
+.redir-home {
+  display: inline-flex;
+  border-radius: 4px;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #00adef;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  height: 56px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  text-decoration: none;
+  padding: 0px 22px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.landlord-invite {
+  font-family: "Raleway", sans-serif;
+  background-image: url(../images/backgrounds/markus-spiske-g5ZIXjzRGds-unsplash.jpg);
+  width: 100%;
+  height: 230px;
+  padding: 30px 0px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.landlord-invite-text {
+  width: 60%;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+  color: #131212;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1024px) {
+  .landlord-invite-text {
+    width: 60%;
+    top: 220px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .landlord-invite-text {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 852px) {
+  .landlord-invite-text {
+    width: 60%;
+    color: #131212;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landlord-invite-text {
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    color: #131212;
+    font-weight: 600;
+  }
+  .landlord-invite {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  .landlord-invite-text {
+    font-size: 18px;
+    left: 25px;
+    width: 70%;
+    font-weight: 600;
+    padding: 0px;
+  }
+  .landlord-invite {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .landlord-invite {
+    padding: 0px;
+  }
+  .landlord-invite-text {
+    font-weight: 600;
+    color: #131212;
+    width: 80%;
+  }
+}
+
+.redir-landlord {
+  display: inline-flex;
+  border-radius: 4px;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #4c7faf4d;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  height: 50px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  text-decoration: none;
+  padding: 0px 22px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .redir-landlord {
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    margin: 0px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.footer {
+  background: rgb(54, 54, 70);
+  width: 100%;
+  display: block;
+}
+
+.footer-container {
+  width: 95%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.footercolumn {
+  width: 20%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 852px) {
+  .footercolumn {
+    width: 30%;
+    text-align: center;
+  }
+  .footercolumn h2 {
+    border-bottom: 2px solid #ff9800;
+  }
+  .border {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footercolumn {
+    width: 60%;
+    text-align: center;
+  }
+  .footercolumn h2 {
+    border-bottom: 2px solid #ff9800;
+  }
+  .border {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  .footercolumn {
+    width: 60%;
+    text-align: center;
+  }
+  .footercolumn h2 {
+    border-bottom: 2px solid #ff9800;
+  }
+  .border {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .footercolumn {
+    width: 60%;
+    text-align: center;
+  }
+  .footercolumn h2 {
+    border-bottom: 2px solid #ff9800;
+  }
+  .border {
+    display: none;
+  }
+}
+
+.border {
+  height: 2px;
+  width: 40px;
+  background: #ff9800;
+}
+
+.footercolumn h2 {
+  font-family: "Raleway", sans-serif;
+  color: #f2f2f2;
+  margin: 10px 0px;
+  text-transform: none;
+}
+
+.footercolumn ul {
+  list-style: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  padding-inline-start: 0px;
+}
+
+.footercolumn ul a {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  transition: 0.3s;
+  font-family: "Raleway", sans-serif;
+}
+
+.footercolumn ul a:hover {
+  color: #ff9800;
+  text-decoration: underline;
+}
+
+.footercolumn ul li {
+  margin: 10px 0px;
+  height: 20px;
+}
+
+.social-media {
+  letter-spacing: 40px;
+}
+
+.footer-bottom {
+  padding: 12px;
+  background: #3d545f00;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+@media screen and (max-width: 1085px) {
+  .social-media {
+    letter-spacing: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .social-media {
+    letter-spacing: 40px;
+  }
+}

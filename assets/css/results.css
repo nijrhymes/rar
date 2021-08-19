@@ -1,0 +1,624 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+.topnav {
+  z-index: auto;
+}
+
+.nav1 {
+  display: block;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  z-index: 1;
+  padding: 0px 0px;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: white;
+}
+
+#toggle {
+  display: none;
+}
+
+.menu {
+  margin: 0 30px 0 0;
+  float: none;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: #9b9b9b;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+.logo {
+  color: #00adef;
+}
+
+.menu-right {
+  float: right;
+}
+
+.menu a:hover {
+  color: rgb(56, 147, 233);
+}
+
+.menu a:active {
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 852px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin: 0px;
+  }
+  .menu-right {
+    float: none;
+  }
+  span {
+    display: block;
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0px;
+  }
+  #toggle:checked + .menu {
+    display: block;
+    background: rgb(54, 54, 70);
+  }
+}
+
+.content-container {
+  display: flex;
+  width: 95%;
+  padding: 30px 20px;
+  margin: 50px 20px;
+  margin-bottom: 0px;
+}
+
+.filtersTab {
+  width: 25%;
+  padding: 16px 8px 16px 24px;
+  background-color: #fafafa;
+  align-self: start;
+  font-family: Raleway;
+  list-style: none;
+}
+
+.filtersMain {
+  padding: 24px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: #224251;
+}
+
+input[type="submit"] {
+
+  display: inline-flex;
+    border-radius: 4px;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #00adef;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    height: 40px;
+    font-family: Raleway;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0px 18px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    
+ /* background-color: #4caf4f7c;
+  color: #fff;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Raleway;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 30px;*/
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.rt-checkbox {
+  display: block;
+  width: 70%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font: 400;
+  font-size: 14px;
+  color: #224251;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.budget-limits {
+  color: #224251;
+  padding-top: 8px;
+}
+
+.resultsContainer {
+  width: 70%;
+  background-color: #fafafa;
+}
+
+@media screen and (max-width: 600px) {
+  .resultsContainer {
+    width: 100%;
+  }
+}
+
+.resultsHeader {
+  width: 90%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  font-family: Raleway;
+  padding-left: 25px;
+}
+
+.sort {
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 33.33333%;
+  width: 33.33333%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sortLabel {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: #575757;
+  padding-right: 20px;
+}
+
+.offerResults {
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  background-color: #fafafa;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  line-height: 20px;
+  width: 95%;
+}
+
+@media screen and (max-width: 600px) {
+  .offerResults {
+    width: 100%;
+  }
+}
+
+.card {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  box-sizing: border-box;
+  justify-content: center;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  width: 30%;
+  padding: 10px;
+  padding-left: 0px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin-top: 0px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .card-img {
+    width: 100%;
+    position: relative;
+    padding-left: 10px;
+  }
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: block;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.card-info {
+  width: 60%;
+  padding: 10px;
+  padding-left: 0px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .card-info {
+    width: 100%;
+    position: relative;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .neighbourhood {
+    font-size: 15px;
+  }
+}
+
+.btm-wrapper {
+  display: flex;
+  align-items: baseline;
+  min-height: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .btm-wrapper {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+  }
+}
+
+.reserve-btn {
+  display: inline-flex;
+  border-radius: 4px;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #00adef;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  height: 40px;
+  font-family: Raleway;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0px 18px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .reserve-btn {
+    margin-bottom: 10px;
+  }
+}
+
+.reserve-btn:hover {
+  opacity: 0.6;
+}
+
+.verified {
+  display: flex;
+  font-size: 14px;
+  position: relative;
+  left: 80px;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .verified {
+    left: -11px;
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+/* Tooltip container */
+.vfd {
+  background-color: #6dbb70e3;
+  padding: 0px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Tooltip text */
+.vfd .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 10%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.vfd .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-left: 40px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.vfd:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.vfd {
+  background-color: #6dbb70e3;
+  padding: 0px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tld {
+  background-color: #00adef;
+  padding: 0px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 15px;
+}
+
+.tld .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tld .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tld:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.footer {
+  padding: 12px;
+  background: rgb(54, 54, 70);
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#bottom-right {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  border-style: none;
+  border-radius: 0px;
+  left: 906px;
+  top: 3750.75px;
+  z-index: 29;
+  width: 340px;
+  height: 21px;
+  position: absolute;
+}
